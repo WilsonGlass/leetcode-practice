@@ -32,7 +32,7 @@ def coin_change(coins: list[int], amount: int) -> int:
     # Create a list of size (amount + 1), one slot for every amount from 0 to amount
     # Each slot stores "what is the fewest coins needed to make this amount?"
     # We will fill it with infinity as a placeholder
-    dp = [float("inf") * (amount + 1)]
+    dp = [float("inf")] * (amount + 1)
     dp[0] = 0 # base case: 0 coins to make amount 0
 
     # Work out way up from amount 1 all the way up to our target amount
