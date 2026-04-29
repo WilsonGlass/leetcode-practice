@@ -26,4 +26,4 @@ def exist(board: list[list[str]], word: str) -> bool:
         for c in range(len(board[0])):
             if dfs(r, c, 0):
                 return True
-    return Falsetho
+    return False
